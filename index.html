@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
     <!-- El encabezado debe ir todo junto -->
     <header>
         <div class="grid1">
-            <div class="Top Home">Home</div> <!-- Añadir enlaces -->
-            <div class="Top Menu">Menu</div>
-            <div class="Top Services">Services</div>
-            <div class="Top Contact">Contact us</div>
+            <a rel="Home" class="Top Home" href="#home">Home</a> <!-- Añadir enlaces -->
+            <a rel="Menu" class="Top Menu" href="#menu">Menu</a>
+            <a rel="Services" class="Top Services" href="#services">Services</a>
+            <a rel="Contact" class="Top Contact" href="#contact">Contact us</a>
             <div class="Top Search"><input type="search" placeholder="Search..."></div>
             <div class="Top Phone">+001 112 223</div>
         </div>
@@ -21,25 +21,31 @@
     <main>
         <!-- Sección 1: tiene una imagen a la derecha -->
         <section>
-            <h1>Get Delicious Food<span> Instantly Delivered</span></h1> <!-- El mensaje en inglés tenía un error gramatical (¿mantener?) -->
+            <nav id="home">
+            <h1>Get Delicious<br> Food<span> Instantly Delivered</span></h1> <!-- El mensaje en inglés tenía un error gramatical (¿mantener?) -->
             <p>La comida rápida al mejor precio...</p>
+            </nav>
         </section>
         <!-- Sección 2: Tiene muchos números -->
         <section>
-            <div>180K website visitors</div> <!-- Faltaba la 's' del plural -->
-            <div>1200+ Daily Orders</div>
-            <div>120+ Delivery Boys</div> <!-- Faltaba la 's' del plural -->
-            <div>12+ Years Experience</div>
+            <div class="grid2">
+            <div class="visitors">180K<br>website visitors</div> <!-- Faltaba la 's' del plural -->
+            <div class="orders">1200+<br>Daily Orders</div>
+            <div class="boys">120+<br>Delivery Boys</div> <!-- Faltaba la 's' del plural -->
+            <div class="exp">12+<br>Years Experience</div>
+            </div>
+            <hr>
         </section>
         <!-- Sección 3: tiene una imagen a la derecha -->
         <section>
-            <nav>About Us</nav>
+            <nav id="menu">About Us</nav>
             <p>texto</p> <!-- Escribir párrafos -->
             <p>texto 2</p>
             <input type="button" value="Read More"> <!-- comprobar si el type es correcto -->
         </section>
         <!-- Sección 4: tiene una imagen a la izquierda -->
-        <section>
+        <section></section>
+            <nav class="Mission" id="services">
             <h1>What Is Our Mission</h1> <!-- Añadido 'Is' -->
             <p>Texto 3</p>
             <li>            <!-- Esta lista se puede rehacer, creando los puntos amarillos con CSS -->
@@ -47,23 +53,44 @@
                 <ul>Punto Amarillo + Texto 5</ul>
                 <input type="button" value="Read More"> <!-- comprobar si el type es correcto -->
             </li> 
+            </nav>
         </section>
         <section>
             <!-- hay una imagen a la derecha -->
-            <div class="grid2">
-                <div class="info Question"><h1>Do You<span > Have a Question?</span></h1></div>
+            <div class="grid3" id="contact">
+                <div class="info Question"><h1>Do You<span> Have a Question?</span></h1></div>
                 <div class="info Name"><input type="text" placeholder="Your Name"></div>
                 <div class="info Email"><input type="email" placeholder="Email Address"></div>  <!-- comprobar si los types son correctos -->
-                <div class="info Message"><input type="text" placeholder="Message"></div>    <!-- ponía 'massage' -->
+                <div class="info Message"><textarea>Mensaje</textarea> </div>    <!-- ponía 'massage' -->
                 <div class="info Message2"><input type="submit" value="Message"></div> <!-- ponía 'massage' -->
             </div>
         </section>
+        <section class="despedida">
+            <h2>OFFER</h2><!-- esto va aparte -->
+            <h1>Subscribe For Get Update Every New Offers</h1><!-- Además, de que no tengo idea de que se supone que dice, esto podría ser un h1 -->
+            <h1><input type="email" placeholder="Enter Your Email Address"> <input type="button" value="Subscribe"></h1><!-- 'Address' se escribe con dos 's' -->
+        </section>
     </main>
-    <!-- Esto se pude poner en el body tambien -->
     <footer>
-        <h2>OFFER</h2><!-- esto va aparte -->
-        <h1>Subscribe For Get Update Every New Offers</h1><!-- Además, de que no tengo idea de que se supone que dice, esto podría ser un h1 -->
-        <input type="email" placeholder="Enter Your Email Address"> <input type="button" value="Subscribe"><!-- 'Address' se escribe con dos 's' -->
+        <section class="grid_footer">
+            <div>Links</div>
+            <div>Other Link</div>
+            <div>Contact info</div>
+            <div>Home</div>
+            <div>My Account</div>
+            <div>Address: 26 East Fulton Court North Ville MI 48167</div>
+            <div>Menu</div>
+            <div>Track Order</div>
+            <div>Email: InfoExample@gmail.com</div>
+            <div>Gallery</div>
+            <div>Invoice</div>
+            <div>Contact</div>
+            <div>Term & Condition</div>
+            <div>Phone: +111333222</div>
+            <div>Texto</div>
+            <div>Copyright 2023 Restaurant.com All rights reserved</div>
+
+        </section>
     </footer>
 </body>
 </html>

@@ -1,0 +1,94 @@
+/*header*/
+.grid1 {
+    background-color: yellow;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.Top{
+    font-size: large; /*añadir padding*/
+    justify-content: center;
+}
+
+.Home{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.Menu{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.Services{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.Contact{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.Search{
+    grid-column: 5;
+    grid-row: 1;
+}   
+
+.Phone{
+    grid-column: 6;
+    grid-row: 1;
+}
+
+nav[id="home"]{
+    background-color: black;
+    font-size: 28px;
+    color: white
+}
+
+span{
+    color: rgb(250, 234, 10);
+}
+
+.grid2{
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    height: 50px;
+}
+
+
+.visitors{
+    grid-column: 1;
+    grid-row: 1; 
+    width: 250px;
+    align-items: center;
+    text-align: center;
+}
+.orders{
+    grid-column: 2;
+    grid-row: 1;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+}
+
+.boys{
+    grid-column: 3;
+    grid-row: 1;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+}
+
+.exp{
+    grid-column: 4;
+    grid-row: 1;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+}

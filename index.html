@@ -10,10 +10,10 @@
     <!-- El encabezado debe ir todo junto -->
     <header>
         <div class="grid1">
-            <nav class="Top Home" id="home">Home</nav> <!-- Añadir enlaces -->
-            <nav class="Top Menu" id="menu">Menu</nav>
-            <nav class="Top Services" id="services">Services</nav>
-            <nav class="Top Contact" id="contact">Contact us</nav>
+            <nav class="Top Home" href="#home">Home</nav> <!-- Añadir enlaces -->
+            <nav class="Top Menu" href="#menu">Menu</nav>
+            <nav class="Top Services" href="#services">Services</nav>
+            <nav class="Top Contact" href="#contact">Contact us</nav>
             <div class="Top Search"><input type="search" placeholder="Search..."></div>
             <div class="Top Phone">+001 112 223</div>
         </div>
@@ -21,6 +21,7 @@
     <main>
         <!-- Sección 1: tiene una imagen a la derecha -->
         <section>
+            <nav id="home"></nav>
             <h1>Get Delicious Food<span> Instantly Delivered</span></h1> <!-- El mensaje en inglés tenía un error gramatical (¿mantener?) -->
             <p>La comida rápida al mejor precio...</p>
         </section>
@@ -33,13 +34,14 @@
         </section>
         <!-- Sección 3: tiene una imagen a la derecha -->
         <section>
-            <nav >About Us</nav>
+            <nav id="menu">About Us</nav>
             <p>texto</p> <!-- Escribir párrafos -->
             <p>texto 2</p>
             <input type="button" value="Read More"> <!-- comprobar si el type es correcto -->
         </section>
         <!-- Sección 4: tiene una imagen a la izquierda -->
         <section>
+            <nav id="services"></nav>
             <h1>What Is Our Mission</h1> <!-- Añadido 'Is' -->
             <p>Texto 3</p>
             <li>            <!-- Esta lista se puede rehacer, creando los puntos amarillos con CSS -->
@@ -50,7 +52,7 @@
         </section>
         <section>
             <!-- hay una imagen a la derecha -->
-            <div class="grid2">
+            <div class="grid2" id="contact">
                 <div class="info Question"><h1>Do You<span > Have a Question?</span></h1></div>
                 <div class="info Name"><input type="text" placeholder="Your Name"></div>
                 <div class="info Email"><input type="email" placeholder="Email Address"></div>  <!-- comprobar si los types son correctos -->

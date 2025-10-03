@@ -8,23 +8,29 @@
 }
 
 .Top{
-    font-size: large; /*añadir padding*/
+    font-size: xx-large; /*añadir padding*/
     justify-content: center;
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Home{
     grid-column: 1;
     grid-row: 1;
+    text-decoration: none;
 }
 
 .Menu{
     grid-column: 2;
     grid-row: 1;
+    text-decoration: none;
 }
 
 .Services{
     grid-column: 3;
     grid-row: 1;
+    text-decoration: none;
 }
 
 .Contact{

@@ -9,7 +9,7 @@
 <body>
     <!-- El encabezado debe ir todo junto -->
     <header>
-        <div class="grid1">
+        <div class="grid_header">
             <a rel="Home" class="Top Home" href="#home">Home</a> <!-- Añadir enlaces -->
             <a rel="Menu" class="Top Menu" href="#menu">Menu</a>
             <a rel="Services" class="Top Services" href="#services">Services</a>
@@ -29,7 +29,7 @@
         <hr>
         <!-- Sección 2: Tiene muchos números -->
         <section>
-            <div class="grid2">
+            <div class="grid_stats">
             <div class="visitors"><b>180K</b><br><em>website visitors</em></div> <!-- Faltaba la 's' del plural -->
             <div class="orders"><b>1200+</b><br><em>Daily Orders</em></div>
             <div class="boys"><b>120+</b><br><em>Delivery Boys</em></div> <!-- Faltaba la 's' del plural -->
@@ -38,33 +38,34 @@
         </section>
         <hr>
         <!-- Sección 3: tiene una imagen a la derecha -->
-        <section>
-            <nav class="grid_about" id="menu">
+        <section class="grid_about">
+            <img src="images/Aboutsection-picture.png" alt="Pizza">
+            <div class="about" id="menu">
             <h1>About Us</h1>
             <p>Founded in 1983, our mission is simple: to provide mouthwatering meals made with care and served quickly, without compromising on taste. Whether you’re grabbing a burger on the go, indulging in a crispy chicken sandwich, or enjoying our signature loaded fries, you can count on us for a satisfying meal that hits the spot every time.
-            <br>
-            <br>
             We source only the finest ingredients—locally grown produce, 100% Angus beef, and crispy, golden fries—so you can feel good about every bite. And because we know everyone has their own unique tastes, we offer plenty of options, from vegan-friendly choices to extra-cheese lovers’ specials.</p>
             <input type="button" value="Read More"> <!-- comprobar si el type es correcto -->
-            </nav>
+            </div>
         </section>
         <hr>
         <!-- Sección 4: tiene una imagen a la izquierda -->
-        <section>
+        <section class="Mission_Grid">
+            <img class="imagen_kebab" src="images/Aboutsection-picture (1).png" alt="kebab">
             <nav class="Mission" id="services">
             <h1>What Is Our Mission</h1> <!-- Añadido 'Is' -->
-            <p>Texto 3</p>
+            <p>Our mission is to bring happiness to our customers through delicious food and exceptional service. All of our staff are dedicated to making your experience enjoyable and memorable.</p>
             <li>            <!-- Esta lista se puede rehacer, creando los puntos amarillos con CSS -->
-                <ul>Punto Amarillo + Texto 4</ul>
-                <ul>Punto Amarillo + Texto 5</ul>
+                <ul><p>Punto Amarillo + Our waiters and cooks work 27 hours a day with a smile on their faces</p></ul>
+                <ul><p>Punto Amarillo + We believe in using only the freshest ingredients</p></ul>
                 <input type="button" value="Read More"> <!-- comprobar si el type es correcto -->
             </li> 
             </nav>
         </section>
         <hr>
-        <section>
+        <section class="Contact_grid">
             <!-- hay una imagen a la derecha -->
-            <div class="grid3" id="contact">
+            <img class="info Image"src="images/Rectangle 9.png" alt="?">
+            <div class="Contact" id="contact">
                 <div class="info Question"><h1>Do You<span> Have a Question?</span></h1></div>
                 <div class="info Name"><input type="text" placeholder="Your Name"></div>
                 <div class="info Email"><input type="email" placeholder="Email Address"></div>  <!-- comprobar si los types son correctos -->

@@ -1,0 +1,357 @@
+/*sección home*/
+
+
+span{
+    color: rgb(250, 234, 10);
+}
+
+.Home_section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-image: url(images/Fondo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 20px;
+    background-color: black;
+}
+
+.Home_section text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 120px;
+    margin: 130px;
+}
+
+.Home_section h1{
+    font-size: 50px;
+    line-height: 2;
+}
+
+.Home_section p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.Home_section image{
+    width: 500px;
+    height: 400px;
+}
+
+/*sección stats*/
+
+.grid_stats{
+    background-color: rgb(209, 90, 90);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    height: 50px;
+    font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+.visitors{
+    grid-column: 1;
+    grid-row: 1; 
+    width: 150px;
+    align-items: center;
+    text-align: center;
+}
+.orders{
+    grid-column: 2;
+    grid-row: 1;
+    width: 150px;
+    align-items: center;
+    text-align: center;
+}
+
+.boys{
+    grid-column: 3;
+    grid-row: 1;
+    width: 150px;
+    align-items: center;
+    text-align: center;
+}
+
+.exp{
+    grid-column: 4;
+    grid-row: 1;
+    width: 150px;
+    align-items: center;
+    text-align: center;
+}
+
+.visitors b, .orders b, .boys b, .exp b{
+    font-size: xx-large;
+}
+
+/*about us*/
+
+.grid_about{
+    display: flex;
+    font-size: large;
+    justify-content: space-between;
+    padding: 10px;
+    height: 500px;
+    background-color: thistle;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.grid_about img{
+    width: 50%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.grid_about .about{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+.grid_about h1{
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.grid_about p{
+    font-size: large;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.grid_about input[type="button"]{
+    height: 50px; 
+    width: 250px; 
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 15px;
+    border: none;
+}
+
+/*Sección Our Mission*/
+
+.Mission_Grid{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: gainsboro;
+}
+.imagen_kebab{
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    max-width: 700px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Mission{
+    width: 50%;
+    margin-left: 30px;
+    margin-left: auto;
+    margin-top: 50px;
+    height: 450px;
+    position: relative;
+}
+
+.Mission h1{
+    font-size: xx-large;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.Mission p{
+    margin-bottom: 20px;
+    font-size: large;
+    padding: 10px;
+    position: relative;
+}
+
+.PuntoAm::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 900px;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    transform: translateY(-60%);
+}
+
+.PuntoAm2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 900px;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    transform: translateY(-60%);
+}
+
+.Mission input[type="button"]{
+    height: 50px; 
+    width: 150px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/*penúltima sección*/
+
+.Contact_grid {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.Contact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+.Contact .Info{
+    font-size: large;
+    padding: 10px;
+}
+
+.info{
+    font-size: large;
+    padding: 10px;
+}
+
+.Question{
+    font-size: xx-large;
+}
+
+.Name, .Email{
+    font-size: 14px;
+    margin: 0;
+}
+
+.Contact .Name, .Contact .Email{
+    display: inline-block;
+    flex: 1;
+}
+
+.Message{
+    height: 100px;
+}
+
+.Message2{
+    margin-top: 20px;
+}
+
+@media (max-width: 768px){
+    .Contact_grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info.Image{
+    width: 80%;
+    margin-bottom: 20px;
+    }
+}
+body input[type="email"]{
+    height: 50px; 
+    width: 250px; 
+}
+
+input[type="text"]{
+    height: 50px; 
+    width: 250px; 
+}
+
+textarea{
+  height: 100px; 
+  width: 570px; 
+}
+
+input[type="submit"]{
+    height: 50px; 
+    width: 250px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.info.Image{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* Esto es un footer temporal*/
+
+.despedida{
+    background-color: gainsboro;
+    position: relative;
+    padding: 50px;
+}
+
+.despedida img{
+    width: 150px;
+    height: 150px;
+}
+
+.despedida h2{
+    position: absolute;
+    top: -50px;
+    right: 200px;
+    padding: 10px;
+}
+
+
+.despedida h1{
+    text-align: center;
+}
+
+.despedida input[type="email"]{
+    border-color: yellow;
+    font-size: 20px;
+    width: 500px;
+    height: 30px;
+    margin: 10px;
+}
+
+.despedida input[type="button"]{
+    height: 40px; 
+    width: 150px; 
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: large;
+    border-radius: 15px;
+}

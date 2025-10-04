@@ -10,8 +10,12 @@ span{
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-    background-color: black;
+    background-image: url(images/Fondo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 0 20px;
+    background-color: black;
 }
 
 .Home_section text{

@@ -16,15 +16,19 @@
             <a rel="Contact" class="Top Contact" href="#contact">Contact us</a>
             <div class="Top Search"><input type="search" placeholder="Search..."></div>
             <div class="Top Phone">+001 112 223</div>
+            <img src="images/Logo.png" alt="logo">
         </div>
     </header>
     <main>
         <!-- Sección 1: tiene una imagen a la derecha -->
-        <section>
+        <section class="Home_section">
+            <img src="images/Rectangle 4.png" alt="burger">
             <nav id="home">
-            <h1>Get Delicious<br> Food<span> Instantly Delivered</span></h1> <!-- El mensaje en inglés tenía un error gramatical (¿mantener?) -->
-            <p>La comida rápida al mejor precio...</p>
-            </nav>
+                <div class="text">
+                    <h1>Get Delicious<br> Food<span> Instantly Delivered</span></h1> <!-- El mensaje en inglés tenía un error gramatical (¿mantener?) -->
+                    <p>Your go-to fast food spot for mouthwatering burgers, crispy fries, and irresistible milkshakes! Whether you're on the go or dining in, we’ve got something for everyone. Made with the freshest ingredients and served with a smile.</p>
+                </div>
+        </nav>
         </section>
         <hr>
         <!-- Sección 2: Tiene muchos números -->
@@ -54,11 +58,9 @@
             <nav class="Mission" id="services">
             <h1>What Is Our Mission</h1> <!-- Añadido 'Is' -->
             <p>Our mission is to bring happiness to our customers through delicious food and exceptional service. All of our staff are dedicated to making your experience enjoyable and memorable.</p>
-            <li>            <!-- Esta lista se puede rehacer, creando los puntos amarillos con CSS -->
-                <ul><p>Punto Amarillo + Our waiters and cooks work 27 hours a day with a smile on their faces</p></ul>
-                <ul><p>Punto Amarillo + We believe in using only the freshest ingredients</p></ul>
-                <input type="button" value="Read More"> <!-- comprobar si el type es correcto -->
-            </li> 
+            <p class="PuntoAm">Our waiters and cooks work 27 hours a day with a smile on their faces</p></ul>
+            <p class="PuntoAm2">We believe in using only the freshest ingredients</p></ul>
+            <input type="button" value="Read More"> <!-- comprobar si el type es correcto -->
             </nav>
         </section>
         <hr>
@@ -75,18 +77,50 @@
         </section>
         <section>
             <div class="despedida">
-            <h2>OFFER</h2><!-- esto va aparte -->
+            <h2><img src="images/offer.png" alt="offer"></h2><!-- esto va aparte -->
             <h1>Subscribe For Get Update Every New Offers</h1><!-- Además, de que no tengo idea de que se supone que dice, esto podría ser un h1 -->
             <h1><input type="email" placeholder="Enter Your Email Address"> <input type="button" value="Subscribe"></h1><!-- 'Address' se escribe con dos 's' -->
             </div>
         </section>
     </main>
-    <footer>
-        <section class="grid_footer">
-            <p>
-            Links Other Link Contact info Home My Account Address: 26 East Fulton Court North Ville MI 48167 Menu Track Order Email: InfoExample@gmail.com Gallery Invoice Contact Term & Condition Phone: +111333222 Texto Copyright 2023 Restaurant.com All rights reserved
-            </p>
-        </section>
+  <footer>
+    <section class="footer_content">
+        <div class="footer_logo_relleno">
+            <img class="Logo_footer" src="images/Logo.png" alt="Logo2">
+            <p class="relleno">Most of these links do not work because we went bankrupt due to the great amount of health-related sanctions. Turns out, our food was garbage and considered a crime against humanity. We hope you did enjoy eating our trash!</p>
+        </div>
+        
+        <div class="footer_links">
+            <p><strong>LINKS</strong></p>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+        
+        <div class="footer_other_links">
+            <p><strong>OTHER LINKS</strong></p>
+            <a href="#">My Account</a>
+            <a href="#">Checkout</a>
+            <a href="#">Track Orders</a>
+            <a href="#">Invoice</a>
+            <a href="#">Term & Condition</a>
+        </div>
+        
+        <div class="footer_contact_info">
+            <p><strong>CONTACT INFO</strong></p>
+            <p>Address: 26 East Fulton Court, North Ville, MI 48167</p>
+            <p>Email: <a href="mailto:InfoExample@gmail.com">InfoExample@gmail.com</a></p>
+            <p>Phone: +111333222</p>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <hr>
+    <section class="copyright">
+        <p>&copy; 2023 Restaurant.com. All rights reserved.</p>
+    </section>
     </footer>
 </body>
 </html>
